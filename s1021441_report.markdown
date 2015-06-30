@@ -7,7 +7,8 @@
 
 **Local Procedure Calls (LPCs)**，區域程序呼叫，是一種以高速訊息傳遞的行程間傳送裝置，是Windows NT Kernel的一部分，用於在線程(Thread)或程序(Process)間的快速溝通，也可用於兩Kernel mode之間、兩User mode之間或User mode和Kernel mode之間的溝通傳遞。
 
-然而LPCs沒辦法藉由Windows API直接被利用，它僅適用於Windows作業系統組件的內部機制。
+然而LPCs沒辦法藉由Windows API直接被利用，它僅適用於Windows作業系統組件的內部機制
+
 **LPCs被使用的時機(地方)：**
 
 > + 使用**remote procedure calls(RPCs)**，一個文檔化的API，當要指定Local-RPC時，可以間接的使用LPCs。
