@@ -11,8 +11,8 @@
 
 ####**LPCs被使用的時機(地方)：**
 
-> + 使用**[Remote Procedure Calls (RPCs)](https://zh.wikipedia.org/wiki/%E9%81%A0%E7%A8%8B%E9%81%8E%E7%A8%8B%E8%AA%BF%E7%94%A8)**，一個文檔化的API，當要指定Local-RPC時，可以間接的使用LPCs。
-*( ※ Local-RPC：一種用於在同系統中兩程序間溝通的RPC形式)*
+> + 使用**[Remote Procedure Calls (RPCs)](https://zh.wikipedia.org/wiki/%E9%81%A0%E7%A8%8B%E9%81%8E%E7%A8%8B%E8%AA%BF%E7%94%A8)**，一個文檔化的API，當要指定Local-RPC時，可以間接的使用LPCs。   
+*( ※ Local-RPC：一種用於在同系統中兩程序間溝通的RPC形式。)*
 + **[Winlogon](https://zh.wikipedia.org/wiki/Winlogon)**使用LPCs與本地安全認證服務器進程，LSASS進行溝通。   
 *( ※ Winlogon.exe是一個實現Windows登入管理，處理用戶登入和登出Windows的進程。每次當你被系統提示輸入帳號和密碼的時候，你就能看到這個進程。)*
 + **[安全參考監視器(Security Reference Monitor)](https://msdn.microsoft.com/en-us/library/windows/hardware/ff565786%28v=vs.85%29.aspx)**使用LPCs來和LSASS進程溝通。
